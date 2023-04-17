@@ -11,6 +11,9 @@ public class Player : MonoBehaviour
     private GameControls _controls;
     private Vector2 _moveInput;
     private bool _isatirando;
+    private int _points; 
+    private int _currentEnergy;
+    [ SerializeField] private int 
 
     private void OnEnable()
     {
@@ -58,5 +61,10 @@ public class Player : MonoBehaviour
         }
     }
 
+    private void AddPoints(int amount)
+    {
+        _point += amount;
+    }
+       
 
 }
